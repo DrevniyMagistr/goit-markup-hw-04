@@ -1,0 +1,320 @@
+/* todo______________________Global-style_______________________________________ */
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --title-primary-color: #212121;
+  --title-accent-color: #ffffff;
+  --text-primary-color: #757575;
+  --accent-color: #2196f3;
+  --address-text-color: #ffffff99;
+  --footer-bg-color: #2f303a;
+  --hover-btn-color: #188ce8;
+
+  --card-gap: 30px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--text-primary-color);
+  background-color: var(--primary-bg-color);
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  color: var(--text-primary-color);
+}
+
+.link:hover,
+.link:focus,
+.link .logo-accent:hover,
+.link .logo-accent:focus,
+.header-link.current {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.section-title {
+  color: var(--title-primary-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+}
+
+/* todo______________________Global-style_______________________________________ */
+
+/* *_____________________________ Header _____________________________*/
+
+.header {
+  outline: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+.header .logo-accent {
+  color: #000000;
+}
+
+.header-nav {
+  margin-left: 90px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-link {
+  padding: 32px 0;
+  color: var(--title-primary-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header .contacts-link {
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+/* *_____________________________ Header _____________________________*/
+
+/* *_____________________________ Big hero _____________________________*/
+.hero {
+  padding: 200px 0;
+  background-color: var(--footer-bg-color);
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-accent-color);
+}
+
+.hero-button {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--title-accent-color);
+  background-color: var(--accent-color);
+}
+
+.hero-button:hover {
+  background-color: var(--hover-btn-color);
+}
+/* *_____________________________ Big hero _____________________________*/
+
+/* *_____________________________ Our advantages _____________________________*/
+
+.advantages-item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-primary-color);
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.advantages-item-text {
+  line-height: inherit;
+  letter-spacing: 0.03em;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -15px;
+}
+
+.advantages-item {
+  width: 270px;
+  margin: 0 15px;
+}
+/* *_____________________________ Our advantages _____________________________*/
+
+/* *_____________________________ Our services _____________________________*/
+.section-services {
+  padding: 0 0 94px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* *_____________________________ Our services _____________________________*/
+
+/* *_____________________________ Our team _____________________________*/
+
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-list-item {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.about-title {
+  margin: 30px 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-primary-color);
+}
+
+.about-description {
+  margin-bottom: 30px;
+  line-height: inherit;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* *_____________________________ Our team _____________________________*/
+
+/* ! Page 2 */
+
+/* *_____________________________ Portfolio _____________________________*/
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-primary-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--title-accent-color);
+  background-color: var(--accent-color);
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
+  margin-top: calc(-1 * var(--card-gap));
+}
+.product-list-item {
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+
+.product-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.description-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-primary-color);
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
+
+/* *_____________________________ Portfolio _____________________________*/
+
+/* *_____________________________ Footer _____________________________*/
+.footer {
+  padding: 60px 0;
+  background-color: var(--footer-bg-color);
+}
+
+.map-link,
+.footer .logo-accent {
+  color: var(--title-accent-color);
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer-contacts-item {
+  letter-spacing: 0.03em;
+  color: var(--address-text-color);
+}
+
+.footer-contacts-item:nth-child(2n) {
+  margin: 9px 0 6px;
+}
+
+/* *_____________________________ Footer _____________________________*/
