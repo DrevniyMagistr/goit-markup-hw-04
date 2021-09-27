@@ -117,13 +117,25 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+
 /* *_____________________________ Header _____________________________*/
 
 /* *_____________________________ Big hero _____________________________*/
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding: 200px 0;
-  background-color: var(--footer-bg-color);
   text-align: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url(../images/home/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero-title {
